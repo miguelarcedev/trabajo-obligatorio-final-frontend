@@ -24,11 +24,11 @@
             <a class="btn btn-primary" href="">Nuevo alumno</a>
             <br><br>
         </div>
-        <div v-if="error">
+        <div v-if="error" id="error_sorry">
             <p>Lo sentimos , ........</p>
         </div>
         <div v-else>
-        <section v-if="cargando">
+        <section v-if="cargando" id="cargando">
             <div class="spinner-border"></div>
             <p>Cargando .....</p>
         </section>
@@ -56,7 +56,7 @@
             </table>
           </div>
         <!--BOTONES-->
-        <button class="btn btn-danger">Eliminar alumno</button>
+        <button class="btn btn-danger" id="eliminar_alumno">Eliminar alumno</button>
         <button class="btn btn-success">Actualizar alumno</button>
     </section>
         <!--Scripts Vue.js-->
