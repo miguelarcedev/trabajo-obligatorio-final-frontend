@@ -21,7 +21,7 @@
         <div id="app" class="container">
             <h3 class="seccion-tit">Listado alumnos</h3>
             <br>
-            <a class="btn btn-primary" href="">Nuevo alumno</a>
+            <a class="btn btn-primary" href="pages\nuevo_alumno.html" id="nuevo_alumno">Nuevo alumno</a>
             <br><br>
         </div>
         <div v-if="error" id="error_sorry">
@@ -57,7 +57,7 @@
           </div>
         <!--BOTONES-->
         <button class="btn btn-danger" id="eliminar_alumno">Eliminar alumno</button>
-        <button class="btn btn-success">Actualizar alumno</button>
+        <button class="btn btn-success" id="actualizar_alumno">Actualizar alumno</button>
     </section>
         <!--Scripts Vue.js-->
         <script
