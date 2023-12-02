@@ -21,7 +21,7 @@
         <div id="app" class="container">
             <h3 class="seccion-tit">Listado alumnos</h3>
             <br>
-            <a class="btn btn-primary" href="alumno_nuevo.html">Nuevo</a>
+            <a class="btn btn-primary" href="">Nuevo alumno</a>
             <br><br>
         </div>
         <div v-if="error">
@@ -32,6 +32,32 @@
             <div class="spinner-border"></div>
             <p>Cargando .....</p>
         </section>
+        <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Edad</th>
+                  <th scope="col">Curso</th>
+                  <th scope="col">Biología</th>
+                  <th scope="col">Filosofía</th>
+                  <th scope="col">Física</th>
+                  <th scope="col">Inglés</th>
+                  <th scope="col">Literatura</th>
+                  <th scope="col">Matemáticas</th>
+                  <th scope="col">Música</th>
+                  <th scope="col">Química</th>
+                </tr>
+              </thead>
+              <tbody id="alumnosTable">
+                <!-- Los datos se cargarán aquí -->
+              </tbody>
+            </table>
+          </div>
+        <!--BOTONES-->
+        <button class="btn btn-danger">Eliminar alumno</button>
+        <button class="btn btn-success">Actualizar alumno</button>
     </section>
         <!--Scripts Vue.js-->
         <script
@@ -42,7 +68,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-        <!-- <script src="./js/main.js"></script> -->
+        <script src="js/script.js"></script>
+        <!--<script src="./js/main.js"></script> -->
         <!-- <script src="./js/alumnos.js"></script>  -->
 </body>
 </html>
