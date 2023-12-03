@@ -29,7 +29,12 @@ button {
     margin-top: 1%;
 }
 
+/*nuevo alumno*/
 #volver {
     margin-top: 1%;
-    width: 50%;
+    width: 70px;
+}
+
+form{
+    margin-top: 2%;
 }

@@ -28,7 +28,7 @@ let error = document.getElementById('error_sorry');
                     <td>${alumno.musica}</td>
                     <td>${alumno.quimica}</td>
                 `;
-       
+    
             tablaAlumnos.appendChild(fila);
             cargando.style.visibility = 'hidden'
             error.style.visibility = 'hidden'

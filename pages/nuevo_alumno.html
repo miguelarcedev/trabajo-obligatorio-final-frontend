@@ -28,42 +28,34 @@
         <input type="number" name="curso" id="curso" min="1" max="7" required>
         <br>
         <label for="biologia">Ingrese la nota de biología del alumno</label>
-        <input type="number" name="biologia" id="biologia" min="0" max="100" required>
+        <input type="number" name="biologia" id="biologia" min="0" max="10" required>
         <br>
         <label for="filosofia">Ingrese la nota de filosofía del alumno</label>
-        <input type="number" name="filosofia" id="filosofia" min="0" max="100" required>
+        <input type="number" name="filosofia" id="filosofia" min="0" max="10" required>
         <br>
         <label for="ingles">Ingrese la nota de inglés del alumno</label>
-        <input type="number" name="ingles" id="ingles" min="0" max="100" required>
+        <input type="number" name="ingles" id="ingles" min="0" max="10" required>
+        <br>
+        <label for="fisica">Ingrese la nota de física del alumno</label>
+        <input type="number" name="fisica" id="fisica" min="0" max="10"> 
         <br>
         <label for="literatura">Ingrese la nota de literatura del alumno</label>
-        <input type="number" name="literatura" id="literatura" min="0" max="100" required>
+        <input type="number" name="literatura" id="literatura" min="0" max="10" required>
         <br>
         <label for="matematicas">Ingrese la nota de matemáticas del alumno</label>
-        <input type="number" name="matematicas" id="matematicas" min="0" max="100" required>
+        <input type="number" name="matematicas" id="matematicas" min="0" max="10" required>
         <br>
         <label for="musica">Ingrese la nota de música del alumno</label>
-        <input type="number" name="musica" id="musica" min="0" max="100" required>
+        <input type="number" name="musica" id="musica" min="0" max="10" required>
         <br>
         <label for="quimica">Ingrese la nota de química del alumno</label>
-        <input type="number" name="quimica" id="quimica" min="0" max="100" required>
+        <input type="number" name="quimica" id="quimica" min="0" max="10" required>
         <br>
-        <button type="submit" class="btn btn-secondary">Agregar alumno</button>
-        <!--
-            Curso</th>
-                  <th scope="col">Biología</th>
-                  <th scope="col">Filosofía</th>
-                  <th scope="col">Física</th>
-                  <th scope="col">Inglés</th>
-                  <th scope="col">Literatura</th>
-                  <th scope="col">Matemáticas</th>
-                  <th scope="col">Música</th>
-                  <th scope="col">Química</th>
-        -->
+        <button type="button" class="btn btn-secondary" id="agrega_alumno">Agregar alumno </button>
     </form>
     <a href="../index.html"class="btn btn-primary" id="volver">Volver</a>
-        <!--Scripts Vue.js-->
-    <script
+        <!--Scripts-->
+        <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
@@ -71,7 +63,7 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-        <script src="js/script.js"></script>
+        <script src="../js/nuevo_alumno.js"></script>
         <!--<script src="./js/main.js"></script> -->
         <!-- <script src="./js/alumnos.js"></script>  -->
 </body>
