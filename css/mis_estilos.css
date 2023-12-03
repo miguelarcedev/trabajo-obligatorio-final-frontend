@@ -1,0 +1,40 @@
+body{
+    display: grid;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2%;
+    background-color: skyblue;
+    font-family: 'Lato', sans-serif;
+}
+
+.seccion-tit{
+    margin-top: 2%;
+}
+
+.app {
+    margin-left: 2%;
+}
+
+#nuevo_alumno, a{
+    margin-left: 2%;
+}
+
+#eliminar_alumno{
+    margin-left: 7%;
+}
+button {
+    margin-top: 1%;
+}
+
+/*nuevo alumno*/
+#volver {
+    margin-top: 1%;
+    width: 70px;
+}
+
+form{
+    margin-top: 2%;
+}
