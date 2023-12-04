@@ -31,6 +31,7 @@ let error = document.getElementById('error_sorry');
     
             tablaAlumnos.appendChild(fila);
             cargando.style.visibility = 'hidden'
+            cargando.style.height = '0'
             error.style.visibility = 'hidden'
         });
     })

@@ -35,7 +35,7 @@ btn_actualizar.addEventListener('click', (e) =>{
     
   .then((respuesta) => {
       // El registro se ha agregado correctamente
-      alert("Registro agregado correctamente");
+      alert("Registro modificado correctamente");
       console.log(respuesta)
   })
   
