@@ -1,5 +1,7 @@
 body{
     display: grid;
+    background-color:antiquewhite;
+    width: 100%;
 }
 
 .titulo, footer {
@@ -18,11 +20,73 @@ footer {
     margin-top: 2%;
 }
 
+.image-inicio {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.img-secundaria {
+    width: 100%;
+    justify-content: center;
+    z-index: 0;
+    margin: 0;
+}
+
+.introduccion {
+    display: flex;
+    margin-top: -35%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-size: 400%;
+    text-align: center;
+    opacity: 85%;
+
+}
+
+@media screen and (max-width: 816px) {
+    .introduccion {
+        display: flex;
+        margin-top: -35%;
+        background-color: aliceblue;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        font-size: 200%;
+        text-align: center;
+        opacity: 85%;
+    
+    }
+}
+@media screen and (max-width: 570px) {
+    .introduccion {
+        display: flex;
+        margin-top: -50%;
+        background-color: aliceblue;
+        position: absolute;
+        z-index: 1;
+        width: 170%;
+        font-size: 150%;
+        text-align: center;
+        opacity: 85%;
+    
+
+    }
+    .img-secundaria {
+        width: 100%;
+        justify-content: center;
+        z-index: 0;
+        margin: 0;
+    }
+    
+}
+
 .app {
     margin-left: 2%;
 }
 
-#nuevo_alumno, a{
+/* #nuevo_alumno, a{
     margin-left: 2%;
 }
 
@@ -31,18 +95,21 @@ footer {
 }
 button {
     margin-top: 1%;
-}
+} */
 
-.mejor_promedio{
+/* .mejor_promedio{
     margin-left: 7%;
 }
-
+ */
 /*nuevo alumno*/
 #volver {
     margin-top: 1%;
+    margin-left: 2%;
     width: 70px;
 }
 
 form{
+    display: flexbox;
     margin-top: 2%;
+    margin-left: 2%;
 }

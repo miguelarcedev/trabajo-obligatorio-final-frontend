@@ -17,12 +17,25 @@
         <!-- place navbar here -->
         <h1 class="titulo">Mis alumnos</h1>
     </header>
+    <section class="imagen-inicio">
+      <img src="img\escuela-secundaria.jpg" alt="" class="img-secundaria">
+      <p class="introduccion">Lleva registros de todos tus alumnos y evalúa su rendimiento</p>
+    </section>
     <section class="app">
         <div id="app" class="container">
             <h3 class="seccion-tit">Listado alumnos</h3>
             <br>
             <a class="btn btn-primary" href="pages\nuevo_alumno.html" id="nuevo_alumno">Nuevo alumno</a>
-            <br><br>
+            <!--BOTONES-->
+            <button class="btn btn-danger" id="eliminar_alumno">Eliminar alumno</button>
+            <a href="pages\actualizar_alumno.html"><button class="btn btn-success" id="actualizar_alumno">Actualizar alumno</button></a>
+            <br>
+            <br>
+        <section class="mejor_promedio">
+          <h3>Calcule el mejor promedio de la escuela</h3>
+          <article id="calculado"></article>
+          <button class="btn btn-success" id="boton_calcular">Calcular promedio</button>
+        </section>
         </div>
         <div v-if="error" id="error_sorry">
             <p>Lo sentimos , ........</p>
@@ -55,16 +68,7 @@
               </tbody>
             </table>
           </div>
-        <!--BOTONES-->
-        <button class="btn btn-danger" id="eliminar_alumno">Eliminar alumno</button>
-        <a href="pages\actualizar_alumno.html"><button class="btn btn-success" id="actualizar_alumno">Actualizar alumno</button></a>
-        <br>
-        <br>
-        <section class="mejor_promedio">
-          <h3>Calcule el mejor promedio de la escuela</h3>
-          <article id="calculado"></article>
-          <button class="btn btn-success" id="boton_calcular">Calcular promedio</button>
-        </section>
+        
     </section>
     <footer>
       <p>Año 2023 - Argentina - CodoACodo</p>
