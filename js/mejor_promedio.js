@@ -14,7 +14,7 @@ boton_calcular.addEventListener('click', ()=>{
       .then(datos => {
         datos.forEach(alumno => {
             promedio = (alumno.biologia + alumno.filosofia + alumno.fisica + alumno.ingles + alumno.literatura + alumno.matematica + alumno.musica + alumno.quimica) / 8
-            console.log(`El alumno ${alumno.nombre} tiene de promedio ${promedio}`) 
+            /* console.log(`El alumno ${alumno.nombre} tiene de promedio ${promedio}`)  */
             if (promedio == calificacion_mayor){
                 mejor_alumno_escuela = [mejor_alumno_escuela,alumno]
             }
