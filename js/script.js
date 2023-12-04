@@ -61,4 +61,3 @@ let $btnEliminar = document.getElementById('eliminar_alumno')
     };
  })
 
-//POST
