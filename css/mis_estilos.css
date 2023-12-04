@@ -1,15 +1,19 @@
 body{
     display: grid;
 }
-.titulo{
+
+.titulo, footer {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 2%;
     background-color: skyblue;
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
-
+footer {
+    margin-top: 1%;
+}
 .seccion-tit{
     margin-top: 2%;
 }
