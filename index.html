@@ -31,11 +31,6 @@
             <a href="pages\actualizar_alumno.html"><button class="btn btn-success" id="actualizar_alumno">Actualizar alumno</button></a>
             <br>
             <br>
-        <section class="mejor_promedio">
-          <h3>Calcule el mejor promedio de la escuela</h3>
-          <article id="calculado"></article>
-          <button class="btn btn-success" id="boton_calcular">Calcular promedio</button>
-        </section>
         </div>
         <div v-if="error" id="error_sorry">
             <p>Lo sentimos , ........</p>
@@ -68,7 +63,11 @@
               </tbody>
             </table>
           </div>
-        
+          <section class="mejor_promedio">
+            <h3>Calcule el mejor promedio de la escuela</h3>
+            <article id="calculado"></article>
+            <button class="btn btn-success" id="boton_calcular">Calcular promedio</button>
+          </section>
     </section>
     <footer>
       <p>Año 2023 - Argentina - CodoACodo</p>
