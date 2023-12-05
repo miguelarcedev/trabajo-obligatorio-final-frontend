@@ -45,5 +45,5 @@ boton_calcular.addEventListener('click', ()=>{
           parrafo_mostrar.appendChild(parr);
         }
       })
-
+      boton_calcular.setAttribute("disabled", true);
     });
