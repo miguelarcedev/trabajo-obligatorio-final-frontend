@@ -19,13 +19,17 @@
         <!-- place navbar here -->
         <h1 class="titulo" ><p class="animate__animated animate__fadeIn">Mis alumnos</p></h1>
     </header>
+    <nav>
+      <a href="#mejor-promedio" class="my-link">Calcular promedio</a>
+      <a href="#nuevo_alumno"class="my-link">Agregar/actualizar alumno</a>
+    </nav>
     <section class="imagen-inicio">
       <img src="img\escuela-secundaria.jpg" alt="" class="img-secundaria">
       <p class="introduccion">Lleva registros de todos tus alumnos y evalúa su rendimiento</p>
     </section>
     <section class="app">
         <div id="app" class="container">
-            <h3 class="seccion-tit">Listado alumnos</h3>
+            <h3 class="seccion-tit">Listado de notas de alumnos</h3>
             <br>
             <a class="btn btn-primary" href="pages\nuevo_alumno.html" id="nuevo_alumno">Nuevo alumno</a>
             <!--BOTONES-->
@@ -65,7 +69,7 @@
               </tbody>
             </table>
           </div>
-          <section class="mejor_promedio">
+          <section class="mejor_promedio" id="mejor-promedio">
             <h3>Calcule el mejor promedio de la escuela</h3>
             <article id="calculado"></article>
             <button class="btn btn-success" id="boton_calcular">Calcular promedio</button>
