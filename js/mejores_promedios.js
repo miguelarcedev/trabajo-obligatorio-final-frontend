@@ -56,19 +56,22 @@ boton_calcular_mejores.addEventListener('click', ()=>{
                 for (alumno of curso){
                     //console.log(alumno)
                     //console.log(`El ${alumno[0].nombre} del año ${alumno[0].curso}, tiene de nota ${alumno[1]}`);
-                    mostrar_alumnos.push(`El alumno: ${alumno[0].nombre} del año ${alumno[0].curso}, tiene de nota ${alumno[1]}`)
+                    mostrar_alumnos.push(`El alumno: ${alumno[0].nombre} del año ${alumno[0].curso}, tiene de nota ${alumno[1]}. `)
                 }
         }
       })
       //mandarlos al párrafo creado en html
       .then(() => {
-        let parrafo = document.createElement('p');
-      
+        let contenedor = document.createElement('div'); // Usamos un div como contenedor
+        
         for (alumno of mostrar_alumnos) {
-          parrafo.textContent += alumno + '\n';
+          let elemento = document.createElement('div'); // Usamos divs para cada elemento
+          elemento.textContent = alumno;
+          contenedor.appendChild(elemento);
         }
-      
-        parrafo_mostrar.appendChild(parrafo);
+        
+        parrafo_mostrar_mejores.appendChild(contenedor);
       });
+      
       
     });
