@@ -41,9 +41,15 @@ boton_calcular_mejores.addEventListener('click', ()=>{
       .then(respuesta => respuesta.json())
       //buscar al mejor promedio
       .then(alumnos => {
+        let mejor_alumno_primero = mejor_alumno(alumnos, 1) 
+        let mejor_alumno_segundo = mejor_alumno(alumnos, 2)
+        let mejor_alumno_tercero = mejor_alumno(alumnos, 3)
         let mejor_alumno_cuarto = mejor_alumno(alumnos,4)
         let mejor_alumno_quinto = mejor_alumno(alumnos,5)
         let mejor_alumno_sexto = mejor_alumno(alumnos,6)
+        mejores_alumnos.push(mejor_alumno_primero)
+        mejores_alumnos.push(mejor_alumno_segundo)
+        mejores_alumnos.push(mejor_alumno_tercero)
         mejores_alumnos.push(mejor_alumno_cuarto)
         mejores_alumnos.push(mejor_alumno_quinto)
         mejores_alumnos.push(mejor_alumno_sexto)
