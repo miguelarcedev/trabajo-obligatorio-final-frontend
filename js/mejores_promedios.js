@@ -78,6 +78,6 @@ boton_calcular_mejores.addEventListener('click', ()=>{
         
         parrafo_mostrar_mejores.appendChild(contenedor);
       });
-      
+      boton_calcular_mejores.setAttribute("disabled", true);
       
     });
