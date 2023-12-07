@@ -143,6 +143,12 @@ button {
 
 .mejor_promedio{
     margin-left: 7%;
+    margin-top: 1%;
+}
+
+.promedio-bton {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
  
 /*nuevo alumno*/
